@@ -1,63 +1,25 @@
 import React from 'react';
+import { View, FlatList } from 'react-native';
+import Header from './components/Header';
+import CarCard from './components/card/CarCard';
+import carros from './data/data.js';
 
-import { Text, StyleSheet, View, Image, FlatList } from 'react-native';
+const App = () => {
+  // Função para renderizar cada item da lista de carros
+  const renderCarItem = ({ item }) => <CarCard car={item} />;
 
-import Header from './components/header';
+  return (    
+    //<View style={{ flex: 1, backgroundColor: 'white' }}>
+      <View style={{ flex: 1 }}> 
+      <Header />
+      <FlatList
+        data={carros}
+        keyExtractor={(item) => item.id}
+        renderItem={renderCarItem}
+        numColumns={4} // Defina o número de colunas como 3
+      />
+    </View>
+  );
+};
 
-import Card from './components/Card';
-import ROTINAS from './data';
-
-export default function App() {
-
-    return (
-
-        <View style={estilo.container}>
-
-            <Header></Header>
-            <View style = {{ width: '100%'}}>
-                <FlatList
-                    data={ROTINAS}
-                    horizontal={true}
-                    keyExtractor={(item) => item.id}
-                    renderItem={({ item }) => (
-
-                        <Card
-                            porcentagem={item.porcentagem}
-                            titulo={item.titulo}
-                            imagem={item.imagem}
-                            descricao={item.descricao}
-
-
-
-                        />
-
-                    )}
-
-
-
-
-                />
-            </View>
-        </View>
-
-    );
-
-}
-
-const estilo = StyleSheet.create({
-
-    container: {
-
-        flex: 1,
-
-        alignItems: 'center',
-
-        backgroundColor: '#CAF0F8',
-
-        borderColor: '#90E0EF',
-
-        paddingHorizontal: 20,
-
-    },
-
-});
+export default App;

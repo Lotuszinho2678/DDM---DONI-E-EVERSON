@@ -1,60 +1,68 @@
-import {StyleSheet} from 'react-native'
+import { StyleSheet } from 'react-native';
 
-const estilo = StyleSheet.create({
-
-cardTarefa: {
-
-marginTop: 20,
-
-backgroundColor: '#A8DADC',
-
-width: '100%',
-
-height: 125,
-
-alignItems:'center',
-
-justifyContent:'space-between',
-
-borderRadius: 10,
-
-borderColor: 'white',
-
-borderWidth: 2,
-
-flexDirection: 'row',
-
-padding: 15,
-
-shadowColor: '#000',
-
-shadowOffset: { width: 0, height: 2 },
-
-shadowOpacity: 0.3,
-
-shadowRadius: 2,
-
-elevation: 5,
-
-},
-
-textoCard: {
-    fontSize: 10,
-
-marginTop: 5,
-
-},
-
-imagemCard: {
-
-width: 60,
-
-height: 60,
-
-marginRight: 15,
-
-}
-
-})
-
-export default estilo;
+export default StyleSheet.create({
+  cardContainer: {
+    top:20,
+    backgroundColor: '#f0f0f0',
+    borderRadius: 10,
+    marginBottom: 30,
+    width: '30%', 
+    marginRight: '3%', 
+    marginLeft: '1%', 
+    elevation: 3,
+    borderWidth: 2, 
+    borderColor: 'black', 
+  },
+  carImage: {
+    width: '100%',
+    height: 200,
+    borderTopLeftRadius: 10,
+    borderTopRightRadius: 10,
+  },
+  textContainer: {
+    padding: 10,
+  },
+  carName: {
+    fontSize: 18,
+    fontWeight: 'bold',
+    color: '#333',
+    marginBottom: 5,
+  },
+  carLabel: {
+    fontWeight: 'bold',
+    color: '#000',
+  },
+  carYear: {
+    fontSize: 14,
+    color: '#191970',
+  },
+  carDescription: {
+    fontSize: 14,
+    color: 'black',
+  },
+  carPrice: {
+    fontSize: 14,
+    color: 'green',
+  },
+  carType: {
+    color: 'red',
+  },
+  modalContainer: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: 'rgba(0, 0, 0, 0.7)', // Fundo escuro translúcido
+  },
+  modalImage: {
+    width: '80%',
+    height: '80%',
+    resizeMode: 'contain', // Ajusta a imagem ao tamanho do modal
+  },
+  closeButton: {
+    color: 'white',
+    backgroundColor: 'black',
+    padding: 10,
+    marginTop: 20,
+    borderRadius: 5,
+  },
+});

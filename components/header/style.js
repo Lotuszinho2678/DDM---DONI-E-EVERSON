@@ -1,37 +1,25 @@
-import {StyleSheet} from 'react-native';
+import { StyleSheet } from 'react-native';
 
-const estilo = StyleSheet.create({
-
-    titulo: {
-    
-    fontSize: 35,
-    
-    fontWeight: 'bold',
-    
-    marginTop: 20,
-    
+export default StyleSheet.create({
+    navBar: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        backgroundColor: '#333',
+        paddingVertical: 10,
+        paddingHorizontal: 5,
     },
-    
-    subtitulo: {
-    
-    fontSize: 20,
-    
-    fontWeight: 'bold',
-    
-    marginTop: 15,
-    
+    logo: {
+        width: 120,
+        height: 50,
     },
-    
-    tituloCard: {
-    
-    fontSize: 15,
-    
-    fontWeight: 'bold',
-    
-    color: '#1d3557',
-    
+    navItem: {
+        alignItems: 'center',
     },
-    
-    })
-    
-    export default estilo;
+    navText: {
+        color: '#fff',
+        fontSize: 16,
+        fontWeight: 'bold',
+        paddingHorizontal: 100,  
+    },
+});

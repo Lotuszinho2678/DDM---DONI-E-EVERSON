@@ -1,25 +1,19 @@
+import 'react-native-gesture-handler';
 import React from 'react';
-import { View, FlatList } from 'react-native';
-import Header from './components/Header';
-import CarCard from './components/card/CarCard';
-import carros from './data/data.js';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import CarListPage from './components/screens/CarListPage'; 
+import CarDetailsPage from './components/screens/CarDetailsPage'; 
 
-const App = () => {
-  // Função para renderizar cada item da lista de carros
-  const renderCarItem = ({ item }) => <CarCard car={item} />;
+const Stack = createStackNavigator();
 
-  return (    
-    //<View style={{ flex: 1, backgroundColor: 'white' }}>
-      <View style={{ flex: 1 }}> 
-      <Header />
-      <FlatList
-        data={carros}
-        keyExtractor={(item) => item.id}
-        renderItem={renderCarItem}
-        numColumns={4} // Defina o número de colunas como 3
-      />
-    </View>
+export default function App() {
+  return (
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName="CarList">
+        <Stack.Screen name="CarList" component={CarListPage} options={{ title: 'Lista de Carros' }} />
+        <Stack.Screen name="CarDetails" component={CarDetailsPage} options={{ title: 'Detalhes do Carro' }} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
-};
-
-export default App;
+}

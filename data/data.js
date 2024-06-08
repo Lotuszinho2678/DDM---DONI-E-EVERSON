@@ -41,8 +41,8 @@ const carros = [
     ano: 2023,
     preco: 48000,
     quilometragem: 0,
-    imagem: 'https://example.com/gol.jpg',
-    descricao: 'Descrição do Volkswagen Gol novo',
+    imagem: 'https://th.bing.com/th/id/OIP.cAGAKyH0jjMA8xA-3yX6cgAAAA?rs=1&pid=ImgDetMain',
+    descricao: 'O compacto da Volkswagen chega à linha 2023 sem a opção de motor 1.6, e sem mais alterações em relação ao ano anterior.O motor é 1.0 flex de 84 cv e 10,4 kgfm com etanol ou 75 cv e 9,7 kgfm com gasolina acoplado à transmissão manual de 5 velocidades. Sua carroceria mede 3897 mm de comprimento, 1656 mm de largura, 1464 mm de altura, 2466 mm de distância entre eixos e 285 litros de capacidade no porta-malas.',
   },
   {
     id: '5',
@@ -108,7 +108,7 @@ const carros = [
     ano: 2023,
     preco: '4.555.000',
     quilometragem: 454,
-    imagem: 'https://image.webmotors.com.br/_fotos/anunciousados/gigante/2024/202404/20240429/porsche-911-4-0-24v-h6-gasolina-gt3-rs-pdk-wmimagem15185241676.webp?s=fill&w=552&h=414&q=60',
+    imagem: 'https://image.webmotors.com.br/_fotos/anunciousados/gigante/2024/202404/20240429/porsche-911-4-0-24v-h6-gasolina-gt3-rs-pdhk-wmimagem15185241676.webp?s=fill&w=552&h=414&q=60',
     descricao: 'O Porsche 911 2023/2024 é um cupê impressionante, equipado com um motor 4.0 24V H6 a gasolina e transmissão automatizada PDK. Com apenas 454 km rodados, este veículo é praticamente novo. Sua carroceria na cor prata adiciona um toque de sofisticação e modernidade. Localizado em Joinville - SC, o vendedor responde rápido e aceita troca. Este Porsche 911 tem um único dono e todas as revisões foram feitas pela agenda do carro e pela concessionária, além de possuir garantia de fábrica. Uma oportunidade excepcional para quem busca um carro esportivo de alto desempenho e exclusividade.',
   },
 
